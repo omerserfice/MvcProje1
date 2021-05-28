@@ -27,6 +27,8 @@ namespace EntityLayerr.Concrete
         [StringLength(50)]
         public string WriteTitle { get; set; }
 
+        public bool WriterStatus { get; set; }
+
         public ICollection<Heading> Headings { get; set; }
 
         public ICollection<Content> Contents { get; set; }

@@ -28,19 +28,21 @@ namespace BusinessLayer.Concrete
             return _headingDal.List();
         }
 
-        public void HeadingAdd(Heading category)
+        public void HeadingAdd(Heading heading)
         {
-            _headingDal.Insert(category);
+            _headingDal.Insert(heading);
         }
 
-        public void HeadingDelete(Heading category)
+        public void HeadingDelete(Heading heading)
         {
-            _headingDal.Delete(category);
+            
+            _headingDal.Update(heading);
+           
         }
 
-        public void HeadingUpdate(Heading category)
+        public void HeadingUpdate(Heading heading)
         {
-            _headingDal.Update(category);
+            _headingDal.Update(heading);
         }
     }
 }
